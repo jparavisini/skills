@@ -6,6 +6,7 @@ Agent skills by Joe Paravisini. Every skill follows the [Agent Skills spec](http
 
 | Skill | What it does |
 |-------|--------------|
+| [catch-me-up](skills/catch-me-up/SKILL.md) | Summarizes a stale session: goal, decisions, blocker, remaining work. |
 | [dafuq](skills/dafuq/SKILL.md) | Rewords the agent's last response when it confused you. |
 
 ## Install
