@@ -6,9 +6,10 @@ Every skill follows the [Agent Skills spec](https://agentskills.io/specification
 
 ## Skills
 
-| Skill                          | What it does                                                                       |
-| ------------------------------ | ---------------------------------------------------------------------------------- |
-| [dafuq](skills/dafuq/SKILL.md) | Rebuilds a long, vague agent response so it leads with the decision you must make. |
+| Skill                                      | What it does                                                                       |
+| ------------------------------------------ | ---------------------------------------------------------------------------------- |
+| [catch-me-up](skills/catch-me-up/SKILL.md) | Summarizes a stale session: blocker, goal, decisions, remaining work.              |
+| [dafuq](skills/dafuq/SKILL.md)             | Rebuilds a long, vague agent response so it leads with the decision you must make. |
 
 ## Install
 
