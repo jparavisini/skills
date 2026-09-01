@@ -4,6 +4,12 @@ Agent skills by Joe Paravisini, packaged as the `jidoka` plugin. Jidoka is the T
 
 Every skill follows the [Agent Skills spec](https://agentskills.io/specification). CI validates each skill on every push.
 
+## Skills
+
+| Skill                          | What it does                                                                       |
+| ------------------------------ | ---------------------------------------------------------------------------------- |
+| [dafuq](skills/dafuq/SKILL.md) | Rebuilds a long, vague agent response so it leads with the decision you must make. |
+
 ## Install
 
 Install everything as a Claude Code plugin:
