@@ -1,0 +1,15 @@
+{
+  "name": "jparavisini-skills",
+  "description": "Joe Paravisini's public agent skills, validated against the agentskills.io spec.",
+  "owner": {
+    "name": "Joe Paravisini",
+    "url": "https://github.com/jparavisini"
+  },
+  "plugins": [
+    {
+      "name": "joe-skills",
+      "source": "./",
+      "description": "Joe Paravisini's agent skills. Each skill follows the agentskills.io spec."
+    }
+  ]
+}

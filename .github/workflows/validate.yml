@@ -1,0 +1,52 @@
+name: Validate skills
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  spec:
+    name: Agent Skills spec
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+
+      - name: Validate every skill against the spec
+        run: |
+          set -euo pipefail
+          failed=0
+          for skill in skills/*/; do
+            echo "::group::${skill}"
+            if ! uvx --from 'git+https://github.com/agentskills/agentskills.git#subdirectory=skills-ref' \
+                skills-ref validate "${skill}"; then
+              failed=1
+            fi
+            echo "::endgroup::"
+          done
+          exit "${failed}"
+
+  marketplace:
+    name: Marketplace config
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check JSON syntax
+        run: |
+          jq empty .claude-plugin/marketplace.json
+          jq empty .claude-plugin/plugin.json
+
+      - name: Check every skill directory has a SKILL.md
+        run: |
+          set -euo pipefail
+          failed=0
+          for skill in skills/*/; do
+            if [ ! -f "${skill}SKILL.md" ]; then
+              echo "Missing SKILL.md in ${skill}"
+              failed=1
+            fi
+          done
+          exit "${failed}"

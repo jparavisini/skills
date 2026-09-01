@@ -1,0 +1,9 @@
+{
+  "name": "joe-skills",
+  "description": "Joe Paravisini's agent skills. Each skill follows the agentskills.io spec.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Joe Paravisini",
+    "url": "https://github.com/jparavisini"
+  }
+}
