@@ -1,0 +1,21 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "Session",
+      "description": "Recover when a session goes stale or a response lands wrong.",
+      "skills": ["catch-me-up", "dafuq"]
+    },
+    {
+      "title": "Writing for agents",
+      "description": "Tighten text that goes into an agent's context.",
+      "skills": ["disambiguate"]
+    },
+    {
+      "title": "Design",
+      "description": "Plan and review software design.",
+      "skills": ["strategic-programming"]
+    }
+  ]
+}
