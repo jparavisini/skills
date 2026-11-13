@@ -13,6 +13,12 @@ Every skill follows the [Agent Skills spec](https://agentskills.io/specification
 | [disambiguate](skills/disambiguate/SKILL.md)                   | Rewrites skills, prompts, and agent instruction files so each sentence is necessary, clear, and testable. |
 | [strategic-programming](skills/strategic-programming/SKILL.md) | Applies John Ousterhout's _A Philosophy of Software Design_ when you plan or review software design.      |
 
+## Output style
+
+[action-first](output-styles/action-first.md) shapes every response so you can act on it: the next action first, numbered steps, no preamble or closer. `dafuq` applies the same rules to one response.
+
+The Claude Code plugin installs it. Select it with `/output-style`. In other agents, paste it into `AGENTS.md`.
+
 ## Install
 
 Install everything as a Claude Code plugin:
@@ -33,6 +39,8 @@ skills/skill-name/
 ├── references/   # optional: docs loaded on demand
 └── assets/       # optional: templates, data files
 ```
+
+Each output style is one Markdown file under `output-styles/`.
 
 ## Validate locally
 
