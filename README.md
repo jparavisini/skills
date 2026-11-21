@@ -13,6 +13,7 @@ Every skill follows the [Agent Skills spec](https://agentskills.io/specification
 | [catch-me-up](skills/catch-me-up/SKILL.md)                     | Summarizes a stale session: blocker, goal, decisions, remaining work.                                     |
 | [dafuq](skills/dafuq/SKILL.md)                                 | Rebuilds a long, vague agent response so it leads with the decision you must make.                        |
 | [disambiguate](skills/disambiguate/SKILL.md)                   | Rewrites skills, prompts, and agent instruction files so each sentence is necessary, clear, and testable. |
+| [minimize](skills/minimize/SKILL.md)                           | Cuts a skill or prompt to the fewest words that still pass its tests, checked with subagent runs.         |
 | [strategic-programming](skills/strategic-programming/SKILL.md) | Applies John Ousterhout's _A Philosophy of Software Design_ when you plan or review software design.      |
 | [timeless-docs](skills/timeless-docs/SKILL.md)                 | Keeps comments, docs, and agent instructions to the current truth, and sweeps a repo for stale history.   |
 

@@ -10,7 +10,7 @@
     {
       "title": "Writing for agents",
       "description": "Tighten text that goes into an agent's context.",
-      "skills": ["disambiguate", "timeless-docs"]
+      "skills": ["disambiguate", "minimize", "timeless-docs"]
     },
     {
       "title": "Design",
