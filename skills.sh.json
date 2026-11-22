@@ -16,6 +16,11 @@
       "title": "Design",
       "description": "Plan and review software design.",
       "skills": ["strategic-programming"]
+    },
+    {
+      "title": "Factory",
+      "description": "Run work through declared steps in Herdr panes, with a person approving at every gate.",
+      "skills": ["factory-init", "factory-start", "factory-triage", "factory-stage", "factory-review"]
     }
   ]
 }
